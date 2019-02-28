@@ -13,6 +13,6 @@ export class AppComponent implements OnInit {
   constructor(private appService: AppService) {}
 
   ngOnInit() {
-    this.appService.getItems().subscribe(s => console.log(s));
+    this.appService.getItems().subscribe((s: any[]) => this.items = s);
   }
 }

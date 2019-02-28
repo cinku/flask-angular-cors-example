@@ -9,6 +9,6 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   public getItems() {
-    return this.http.get("localhost:5000/items");
+    return this.http.get("http://localhost:5000/items");
   }
 }
